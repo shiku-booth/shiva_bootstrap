@@ -17,5 +17,4 @@ class User < ApplicationRecord
 
   has_many(:notes, { :class_name => "Note", :foreign_key => "user_id"})
 
-  validates :user_id, presence:true
 end

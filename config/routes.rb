@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get("/", { :controller => "notes", :action => "index" })
+  
   # Routes for the User account:
 
   # SIGN UP FORM
@@ -27,7 +29,6 @@ Rails.application.routes.draw do
              
   #------------------------------
 
-  post("/", { :controller => "notes", :action => "index" })
      
 
   # Routes for the Note resource:
